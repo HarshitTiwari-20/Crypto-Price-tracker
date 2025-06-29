@@ -1,0 +1,29 @@
+.track{
+    color:var(--white); 
+    -webkit-text-stroke-width: 2px;  
+    -webkit-text-stroke-color: var(--blue);
+ }
+.track:hover{
+    color:var(--blue);
+    -webkit-text-stroke-width: 1.2px;  
+    -webkit-text-stroke-color: var(--white);
+    transition-duration: all 0.5s ease-in-out;
+}
+
+.self{
+    color: var(--white);
+    -webkit-text-stroke-width: 2px;  
+    -webkit-text-stroke-color: var(--blue);
+}
+
+.self:hover{
+    color:var(--black);
+    -webkit-text-stroke-width: 1.2px;  
+    -webkit-text-stroke-color: var(--);
+    transition-duration: all 0.5s ease-in-out;
+}   
+
+
+.phone-cont{
+    width: 50%;
+}
