@@ -1,7 +1,7 @@
 .track{
     color:var(--white); 
     -webkit-text-stroke-width: 2px;  
-    -webkit-text-stroke-color: var(--blue);
+    -webkit-text-stroke-color: var(--black);
  }
 .track:hover{
     color:var(--blue);
@@ -12,7 +12,7 @@
 
 .self{
     color: var(--white);
-    -webkit-text-stroke-width: 2px;  
+    -webkit-text-stroke-width: 2px;   
     -webkit-text-stroke-color: var(--blue);
 }
 
@@ -24,6 +24,52 @@
 }   
 
 
-.phone-cont{
+.phone-cont {
     width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.iphone{
+    position: relative;
+    width: 350px;
+    /* image is overlapping on navbar==========>> fix it*/
+    width: 40%;
+    min-width: 300px;
+    width: 40%;
+    max-width: 600px;
+    margin: 0% 0% 100% 20%;
+    margin-top: -50%;
+    right: 0;
+    left: 100%;
+    z-index: 0;
+  }
+
+.gradient{
+    position: absolute;
+    width: 40%;
+    min-width: 300px;
+    width: 40%;
+    max-width: 600px;
+    margin: 90% 0% 100% 20%;
+    right: 0;
+    left: 100%;
+    z-index: 0;
+   
+  }
+
+
+
+@media only screen and (max-width: 1250px) {
+
+    .iphone {
+        width: 50%;
+       min-width: 250px;
+    }
+    .gradient {
+       min-width: 250px;
+       top: 6rem;
+    }
 }
