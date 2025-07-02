@@ -35,7 +35,7 @@ export default function AnchorTemporaryDrawer() {
                 </span>
               </a>
             </span>
-            <span>
+            <span> 
               <a href="/">
                 <span className=" text-white-500 hover:bg-gray-800 bg-black  sm:hidden text-xl py-4 px-6 rounded-lg border-2 border-transparent transition-all duration-300">
                   Market
