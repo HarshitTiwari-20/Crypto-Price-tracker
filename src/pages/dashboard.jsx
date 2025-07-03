@@ -8,8 +8,7 @@ import { BrowserRouter } from "react-router-dom";
 function DBpage() {
     return (
         <div className="App" >
-            hiiiii
-            fgfgfgfgfgfg
+            
         </div >
     );
 }

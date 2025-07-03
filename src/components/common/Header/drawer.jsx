@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 import Drawer from "@mui/material/Drawer";
 //import Button from "@mui/material/Button";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
@@ -21,26 +21,26 @@ export default function AnchorTemporaryDrawer() {
         <Drawer anchor={"right"} open={Open} onClose={() => setOpen(false)} >
           <div className="flex flex-col space-y-15 items-center bg-gray-900 p-10 w-full h-full">
             <span>
-              <a href="/">
+              <Link to="/">
                 {/* mereko ye className=" text-gray-500 hover:text-white" bar bar nhi likhna , avi ke liye lagaya hu baad me update hoga */}
                 <span className=" text-white-500 hover:bg-gray-800 bg-black sm:hidden text-xl py-4 px-6 rounded-lg border-2 border-transparent transition-all duration-300">
                   Home
                 </span>
-              </a>
+              </Link>
             </span>
             <span>
-              <a href="/">
+              <Link to="/">
                 <span className=" text-white-500 hover:bg-gray-800 bg-black sm:hidden text-xl py-4 px-6 rounded-lg border-2 border-transparent transition-all duration-300">
                   Watchlist
                 </span>
-              </a>
+              </Link>
             </span>
             <span> 
-              <a href="/">
+              <Link to="/">
                 <span className=" text-white-500 hover:bg-gray-800 bg-black  sm:hidden text-xl py-4 px-6 rounded-lg border-2 border-transparent transition-all duration-300">
                   Market
                 </span>
-              </a>
+              </Link>
             </span>
           </div>
         </Drawer>
