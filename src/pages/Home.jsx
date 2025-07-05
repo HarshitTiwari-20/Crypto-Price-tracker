@@ -1,18 +1,18 @@
 import React from "react";
-import Header from "../components/common/Header/drawer";
+import Header from "../components/common/Header/indexh";
 import MainComp from "../components/Dashboard/MainComp";
 import { BrowserRouter } from "react-router-dom";
-import TabsComp from "../components/Dashboard/Tabs";
 
+ 
 
-
-function DBpage() {
+function HomePage() {
     return (
         <div className="App" >
-            <TabsComp/>
+            <Header />
+            <MainComp/>
             
         </div >
     );
 }
 
-export default DBpage;
+export default HomePage;

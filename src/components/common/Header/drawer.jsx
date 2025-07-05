@@ -29,16 +29,16 @@ export default function AnchorTemporaryDrawer() {
               </Link>
             </span>
             <span>
-              <Link to="/">
+              <Link to="/watchlist">
                 <span className=" text-white-500 hover:bg-gray-800 bg-black sm:hidden text-xl py-4 px-6 rounded-lg border-2 border-transparent transition-all duration-300">
                   Watchlist
                 </span>
               </Link>
             </span>
             <span> 
-              <Link to="/">
-                <span className=" text-white-500 hover:bg-gray-800 bg-black  sm:hidden text-xl py-4 px-6 rounded-lg border-2 border-transparent transition-all duration-300">
-                  Market
+              <Link to="/compare">
+                <span className=" text-white-500 hover:bg-gray-800 bg-black  sm:hidden text-xl py-4 px-1  rounded-lg border-2 border-transparent transition-all duration-300">
+                  Compare
                 </span>
               </Link>
             </span>
