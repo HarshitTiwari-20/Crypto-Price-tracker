@@ -1,35 +1,67 @@
-import React from "react";
+import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
-import { useState } from "react";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import Grid from "../Grids"; // Adjust the path as needed
 
-export default function TabsComp() {
-  const [value, setValue] = useState("1");
+export default function TabsComp({coins}) {
+  const [value, setValue] = useState("Grid");
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
+  const theme = createTheme({
+    palette: {
+      primary: {
+        main: "#3a80e9",
+      },
+    },
+  });
+
+  const style = {
+    color: "var(--white)",
+    "& .Mui-selected": {
+      color: "var(--blue) !important",
+    },
+    fontFamily: "Inter,sans-serif",
+    fontWeight: 600,
+    textTransform: "capitalize",
+  };
+
+
   return (
-    <Box sx={{ width: "100%", typography: "body1" }}>
+    <ThemeProvider theme={theme}>
       <TabContext value={value}>
         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-          <TabList onChange={handleChange} aria-label="lab API tabs example">
-            <Tab label="Item One" value="1" />
-            <Tab label="Item Two" value="2" />
-            <Tab label="Item Three" value="3" />
+          <TabList
+            onChange={handleChange}
+            variant="fullWidth"
+            aria-label="lab API tabs example"
+            className="text-white"
+          >
+            <Tab label="Grid" value="Grid" sx={style} />
+            <Tab label="List" value="List" sx={style} />
           </TabList>
         </Box>
-        <TabPanel value="1">Item One</TabPanel>
-        <TabPanel value="2">Item Two</TabPanel>
-        <TabPanel value="3">Item Three</TabPanel>
+        <TabPanel value="Grid">
+          <div className="grid-flex flex justify-center items-center flex-wrap gap-[1rem] mb-[2rem] ">
+            {coins.map((coin, i) => {
+              return <Grid coin={ coin} key={i} />;
+            })}
+          </div>
+        </TabPanel>
+        <TabPanel value="List">
+          <div>
+            {coins.map((item, i) => (
+              <p key={i + 1}>{item.id}</p>
+            ))}
+          </div>
+        </TabPanel>
       </TabContext>
-    </Box>
+    </ThemeProvider>
   );
 }
-
-
-

@@ -1,0 +1,142 @@
+.grid-container {
+  width: 350px;
+  height: 350px;
+  background-color: #1b1b1b;
+  border: 2px solid #2c2c2c;
+  border-radius: 15px;
+}
+
+.info-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  margin:  1.5rem;
+}
+
+.coin-logo {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.coin-symbol {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.coin-name {
+  color: #708090;
+  text-transform: uppercase;
+  font-weight: light;
+  font-size: 1rem;
+  margin: 0;
+}
+
+
+.name-col{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+
+
+.chip-flex{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem, 1.5rem;
+
+}
+
+.price-chip {
+  background-color: #2c2c2c;
+  color: rgb(32, 181, 32);
+  padding: 0.5rem 1.25rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  margin: 8px 10px 10px 30px;
+  font-weight: 600;
+  border: 2px solid rgb(24, 178, 24);
+}
+
+
+
+
+
+.red {
+  color: red; 
+  border-color: red;
+}
+
+
+.icon-chip{
+  background-color: #2c2c2c;
+  color: rgb(24, 154, 24);
+  
+  border-radius: 50%;
+  font-size: 1rem;
+  height: 2rem ;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  border: 2px solid rgb(24, 178, 24);
+}
+
+.chip-red{
+  background-color: #2c2c2c;
+  color: red;
+  border-radius: 50%;
+  font-size: 1rem;
+  height: 2rem ;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  border: 2px solid red;
+}
+
+
+.chip-green{
+  background-color: #2c2c2c;
+  color: rgb(20, 195, 20);
+  border-radius: 50%;
+  font-size: 1rem;
+  height: 2rem ;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  border: 2px solid rgb(18, 182, 18);
+}
+
+
+.chip-red:hover{
+  background-color: red;
+  color: white;
+}
+.chip-green:hover{
+  background-color: rgb(20, 195, 20);
+  color: white;
+}
+
+
+.price-red:hover {
+  background-color: red;
+  color: white;
+  transition: 0.3s;
+}
+.price-green:hover {
+  background-color: rgb(20, 195, 20);
+  color: white;
+  transition: 0.3s;
+}
