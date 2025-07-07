@@ -31,7 +31,7 @@ function Grid({coin}) {
             </div>
           </div>
         )}
-        <div className="px-8 ">
+            <div className="px-8 h- w-0.">
           {coin.price_change_percentage_24h >= 0 ? (
             <div className="current-price text-green-600 font-semibold text-base">
               ${coin.current_price.toLocaleString()}
