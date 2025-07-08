@@ -49,7 +49,7 @@ function MainComp() {
             <img src={iphone} className="iphone" alt="iPhone mockup" />
           </motion.h>
           
-          {/* <img src={gradient} className="gradient" alt="Gradient background" /> */}
+          <img src={gradient} className="gradient" alt="Gradient background" />
         </div>
         <div className=""></div>
       </div>
