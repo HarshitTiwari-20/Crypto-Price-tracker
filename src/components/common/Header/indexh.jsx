@@ -3,9 +3,10 @@ import "./../../../App.css";
 import AnchorTemporaryDrawer from "./drawer.jsx";
 import Button from "../Button/button.jsx";
 import { Link } from "react-router-dom";
+import "./style.css";
 const Header = () => {
   return (
-    <div className="flex text-4xl font-extrabold justify-between items-center py-6 px-10 sticky top-0 left-0 bg-black  ">
+    <div className="flex nav text-4xl font-extrabold justify-between items-center  py-6 px-10 sticky top-0 left-0 bg-black  ">
       <div className="logo text-4xl saira-italic font-semibold max-sm:text-2xl">
         <Link to="/"> Crypto Tracker </Link>
         {/*<span className="bg-blue-600">.</span>*/}
@@ -25,7 +26,8 @@ const Header = () => {
         </Link>
         <Link
           to="/compare"
-          className="text-gray-500 hover:text-white hover:bg-gray-800 rounded-lg border-2 border-transparent transition-all duration-300 py-4 px-4">
+          className="text-gray-500 hover:text-white hover:bg-gray-800 rounded-lg border-2 border-transparent transition-all duration-300 py-4 px-4"
+        >
           Compare
         </Link>
         <Link to="/dashboard">

@@ -8,6 +8,7 @@ import MainComp from './components/Dashboard/MainComp';
 import HomePage from './pages/Home';
 import DBpage from './pages/dashboard';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+//import CoinPage from "./pages/CoinPage";
 
 function App() {
   
@@ -15,8 +16,8 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Header />
         <Routes>
-         
           <Route path="/" element={<HomePage />} />
           <Route path="/dashboard" element={<DBpage />} />
           {/* <Route path="/coin/:id" element={<CoinPage />} />

@@ -5,6 +5,7 @@ import iphone from "../../../assets/iphone.png"
 import gradient from "../../../assets/gradient.png"
 import { motion } from "framer-motion";
 import { delay } from "framer-motion/dom";
+import { Link } from "react-router-dom";
 
 function MainComp() {
     return (
@@ -31,7 +32,9 @@ function MainComp() {
             Track Crypto Price in Real Time !!!
           </div>
           <div className=" px-11 py-5 flex gap-x-4 max-sm:text-xl justify-start items-center mt-1.5">
-            <Button text={"Dashboard"} />
+            <Link to="/dashboard">
+              <Button text={"Dashboard        "} />{" "}
+            </Link>
             <Button text={"Share"} className="self" />
           </div>
         </motion.h>
@@ -46,10 +49,10 @@ function MainComp() {
               repeat: Infinity,
             }}
           >
-            <img src={iphone} className="iphone" alt="iPhone mockup" />
+            <img src={iphone} className="iphone " alt="iPhone mockup" />
           </motion.h>
-          
-          <img src={gradient} className="gradient" alt="Gradient background" />
+
+          {/* <img src={gradient} className="gradient" alt="Gradient background" /> */}
         </div>
         <div className=""></div>
       </div>

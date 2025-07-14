@@ -18,7 +18,7 @@ export default function AnchorTemporaryDrawer() {
       </IconButton>
 
       <div className="bg-black ">
-        <Drawer anchor={"right"} open={Open} onClose={() => setOpen(false)} >
+        <Drawer anchor={"right"} open={Open} onClose={() => setOpen(false)}>
           <div className="flex flex-col space-y-15 items-center bg-gray-900 p-10 w-full h-full">
             <span>
               <Link to="/">
@@ -35,13 +35,19 @@ export default function AnchorTemporaryDrawer() {
                 </span>
               </Link>
             </span>
-            <span> 
+            <span>
               <Link to="/compare">
                 <span className=" text-white-500 hover:bg-gray-800 bg-black  sm:hidden text-xl py-4 px-1  rounded-lg border-2 border-transparent transition-all duration-300">
                   Compare
                 </span>
               </Link>
-              
+            </span>
+            <span>
+              <Link to="/dashboard">
+                <span className=" text-white-500 hover:bg-gray-800 bg-blue-500  sm:hidden text-xl py-4 px-1  rounded-lg border-2 border-transparent transition-all duration-300">
+                  Dashboard
+                </span>
+              </Link>
             </span>
           </div>
         </Drawer>

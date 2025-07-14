@@ -6,9 +6,9 @@ import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Grid from "../Grids"; // Adjust the path as needed
-import Lists from "../List";
 
-export default function TabsComp({coins}) {
+
+export default function TabsComp({ coins }) {
   const [value, setValue] = useState("Grid");
 
   const handleChange = (event, newValue) => {
@@ -33,7 +33,6 @@ export default function TabsComp({coins}) {
     textTransform: "capitalize",
   };
 
-
   return (
     <ThemeProvider theme={theme}>
       <TabContext value={value}>
@@ -45,25 +44,17 @@ export default function TabsComp({coins}) {
             className="text-white"
           >
             <Tab label="Grid" value="Grid" sx={style} />
-            <Tab label="List" value="List" sx={style} />
+            {/* <Tab label="List" value="List" sx={style} /> */}
           </TabList>
         </Box>
         <TabPanel value="Grid">
           <div className="grid-flex flex justify-center items-center flex-wrap gap-[1rem] mb-[2rem] ">
-            {coins.map((coin, i) => {
-              return <Grid coin={coin} key={i} />;
-            })}
+            {coins.map((coin, i) => (
+              <Grid coin={coin} key={i} />
+            ))}
           </div>
         </TabPanel>
-        <TabPanel value="List">
-          <tbody>
-            <div>
-              {coins.map((item, i) => {
-                return <Lists coins={item} key={i} />;
-              })}
-            </div>
-          </tbody>
-        </TabPanel>
+        
       </TabContext>
     </ThemeProvider>
   );

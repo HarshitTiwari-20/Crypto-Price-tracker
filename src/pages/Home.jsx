@@ -8,7 +8,8 @@ import { BrowserRouter } from "react-router-dom";
 function HomePage() {
     return (
         <div className="App" >
-            <Header />
+
+            {/* <Header /> */}
             <MainComp/>
             
         </div >
