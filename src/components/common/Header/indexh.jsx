@@ -3,7 +3,7 @@ import "./../../../App.css";
 import AnchorTemporaryDrawer from "./drawer.jsx";
 import Button from "../Button/button.jsx";
 import { Link } from "react-router-dom";
-import "./style.css";
+
 const Header = () => {
   return (
     <div className="flex nav text-4xl font-extrabold justify-between items-center  py-6 px-10 sticky top-0 left-0 bg-black  ">
