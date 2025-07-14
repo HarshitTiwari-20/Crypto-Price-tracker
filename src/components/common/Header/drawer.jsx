@@ -41,6 +41,7 @@ export default function AnchorTemporaryDrawer() {
                   Compare
                 </span>
               </Link>
+              
             </span>
           </div>
         </Drawer>

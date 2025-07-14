@@ -6,6 +6,7 @@ import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Grid from "../Grids"; // Adjust the path as needed
+import List from "../LISt";
 
 export default function TabsComp({coins}) {
   const [value, setValue] = useState("Grid");
@@ -50,16 +51,18 @@ export default function TabsComp({coins}) {
         <TabPanel value="Grid">
           <div className="grid-flex flex justify-center items-center flex-wrap gap-[1rem] mb-[2rem] ">
             {coins.map((coin, i) => {
-              return <Grid coin={ coin} key={i} />;
+              return <Grid coin={coin} key={i} />;
             })}
           </div>
         </TabPanel>
         <TabPanel value="List">
-          <div>
-            {coins.map((item, i) => (
-              <p key={i + 1}>{item.id}</p>
-            ))}
-          </div>
+          <table>
+            <div>
+              {coins.map((item, i) => {
+                return <List coins={item} key={i} />;
+              })}
+            </div>
+          </table>
         </TabPanel>
       </TabContext>
     </ThemeProvider>

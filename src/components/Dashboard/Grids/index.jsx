@@ -17,7 +17,7 @@ function Grid({coin}) {
             <div className="price-chip price-green ">
               {coin.price_change_percentage_24h.toFixed(2)}%
             </div>
-            <div className="icon-chip price-red price-chip chip-green">
+            <div className="icon-chip  price-chip price-green chip-green">
               <TrendingUpRoundedIcon />
             </div>
           </div>
@@ -31,7 +31,7 @@ function Grid({coin}) {
             </div>
           </div>
         )}
-            <div className="px-8 h- w-0.">
+        <div className="px-8 h- w-0.">
           {coin.price_change_percentage_24h >= 0 ? (
             <div className="current-price text-green-600 font-semibold text-base">
               ${coin.current_price.toLocaleString()}
