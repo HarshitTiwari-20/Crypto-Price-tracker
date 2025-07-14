@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import TrendingDownRoundedIcon from "@mui/icons-material/TrendingDownRounded";
 import TrendingUpRoundedIcon from "@mui/icons-material/TrendingUpRounded";
-function List({ coin }) {
+function Lists({ coin }) {
     return (
       <tr className="list-row">
         <td>
@@ -54,4 +54,4 @@ function List({ coin }) {
     );  
 }
 
-export default List;
+export default Lists;
